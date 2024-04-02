@@ -68,7 +68,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'LandingPage.wsgi.application'
+WSGI_APPLICATION = 'LandingPage.wsgi.app'
+# WSGI_APPLICATION = 'LandingPage.wsgi.app'
 
 
 # Database
@@ -100,7 +101,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-ALLOWED_HOSTS = ['.vercel.app'] # Allow *.vercel.app
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1' , 'localhost'] # Allow *.vercel.app
 
 DATABASES = {} # Prevent Django from loading an adapter
 
